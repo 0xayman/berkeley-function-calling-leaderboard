@@ -124,6 +124,7 @@ local_inference_handler_map = {
     "Qwen/Qwen2-7B-Instruct": QwenHandler,
     "Qwen/Qwen2.5-1.5B-Instruct": QwenHandler,
     "Qwen/Qwen2.5-7B-Instruct": QwenHandler,
+    '0xayman/Qwen-1.5B-fc-v3': QwenHandler,
     "Team-ACE/ToolACE-8B": LlamaHandler,
     "openbmb/MiniCPM3-4B": MiniCPMHandler,
 }

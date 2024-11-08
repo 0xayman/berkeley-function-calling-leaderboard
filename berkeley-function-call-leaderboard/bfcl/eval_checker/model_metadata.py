@@ -613,6 +613,12 @@ MODEL_METADATA_MAPPING = {
         "Microsoft",
         "MIT",
     ],
+     "0xayman/Qwen-1.5B-fc-v3": [
+        "Qwen-1.5B-fc-v2 (Prompt)",
+        "https://huggingface.co/0xayman/Qwen-1.5B-fc-v3",
+        "Ayman",
+        "apache-2.0",
+    ],
     "Qwen/Qwen2-1.5B-Instruct": [
         "Qwen2-1.5B-Instruct (Prompt)",
         "https://huggingface.co/Qwen/Qwen2-1.5B-Instruct",
