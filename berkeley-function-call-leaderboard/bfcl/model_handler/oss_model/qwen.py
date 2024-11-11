@@ -19,33 +19,5 @@ class QwenHandler(OSSHandler):
 
         return formatted_prompt
 
-    def decode_ast(self, result, language="Python"):
-        # extract the json list from the result
-        import re
-        import json
 
-        # extract the json list from the result
-        json_list_pattern = r'\[\s*{.*?}\s*\]'
-        match = re.search(json_list_pattern, result, re.DOTALL)
-        new_res = []
-        if match:
-            json_list_str  =match.group(0)
-
-            try:
-                new_res = json.loads(json_list_str)
-            except json.JSONDecodeError:
-                return new_res
-            
-        return new_res
-    
-    def decode_execute(self, result):
-        python_format = []
-        result = self.decode_ast(result)
-
-        # ["func1(param1=val1)", "func2(param2=val2)"]
-        for res in result:
-            func_name = res.get("name", "")
-            args = res.get("arguments", {})
-            args_str = ", ".join([f"{k}={v}" for k, v in args.items()])
-            python_format.append(f"{func_name}({args_str})")
             
