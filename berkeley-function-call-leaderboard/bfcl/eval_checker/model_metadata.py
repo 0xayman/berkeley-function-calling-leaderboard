@@ -626,6 +626,14 @@ MODEL_METADATA_MAPPING = {
         "Ayman",
         "apache-2.0",
     ],
+    "0xayman/Qwen-1.5B-fc-v5": [
+        "Qwen-1.5B-fc-v5 (Prompt)",
+        "https://huggingface.co/0xayman/Qwen-1.5B-fc-v5",
+        "Ayman",
+        "apache-2.0",
+    ],
+
+
     "0xayman/Llama3.2-1B-fc-v1": [
         "Llama3.2-1B-fc-v1 (Prompt)",
         "https://huggingface.co/0xayman/Llama3.2-1B-fc-v1",
