@@ -614,29 +614,9 @@ MODEL_METADATA_MAPPING = {
         "MIT",
     ],
     
-    "0xayman/Qwen-1.5B-fc-v3": [
-        "Qwen-1.5B-fc-v2 (Prompt)",
-        "https://huggingface.co/0xayman/Qwen-1.5B-fc-v3",
-        "Ayman",
-        "apache-2.0",
-    ],
-    "0xayman/Qwen-1.5B-fc-v4": [
-        "Qwen-1.5B-fc-v4 (Prompt)",
-        "https://huggingface.co/0xayman/Qwen-1.5B-fc-v4",
-        "Ayman",
-        "apache-2.0",
-    ],
-    "0xayman/Qwen-1.5B-fc-v5": [
-        "Qwen-1.5B-fc-v5 (Prompt)",
-        "https://huggingface.co/0xayman/Qwen-1.5B-fc-v5",
-        "Ayman",
-        "apache-2.0",
-    ],
-
-
-    "0xayman/Llama3.2-1B-fc-v1": [
-        "Llama3.2-1B-fc-v1 (Prompt)",
-        "https://huggingface.co/0xayman/Llama3.2-1B-fc-v1",
+    "0xayman/Qwen2.5-Coder-1.5B-fc-v1": [
+        "Qwen2.5-Coder-1.5B-fc-v1 (Prompt)",
+        "https://huggingface.co/0xayman/Qwen2.5-Coder-1.5B-fc-v1",
         "Ayman",
         "apache-2.0",
     ],
