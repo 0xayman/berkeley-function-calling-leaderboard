@@ -23,6 +23,7 @@ from bfcl.model_handler.proprietary_model.nexus import NexusHandler
 from bfcl.model_handler.proprietary_model.nvidia import NvidiaHandler
 from bfcl.model_handler.proprietary_model.openai import OpenAIHandler
 from bfcl.model_handler.proprietary_model.yi import YiHandler
+from bfcl.model_handler.proprietary_model.gogoagent import GoGoAgentHandler
 
 # TODO: Add Deepseek V2, meta-llama/Llama-3.1-405B-Instruct
 
@@ -79,6 +80,7 @@ api_inference_handler_map = {
     "command-r-plus-optimized": CohereHandler,
     "snowflake/arctic": NvidiaHandler,
     "nvidia/nemotron-4-340b-instruct": NvidiaHandler,
+    "BitAgent/GoGoAgent": GoGoAgentHandler,
     # "yi-large-fc": YiHandler,  #  Their API is under maintenance, and will not be back online in the near future
 }
 
@@ -90,10 +92,8 @@ local_inference_handler_map = {
     "meta-llama/Meta-Llama-3-8B-Instruct": LlamaHandler,
     "meta-llama/Meta-Llama-3-70B-Instruct": LlamaHandler,
     "meta-llama/Llama-3.1-8B-Instruct-FC": LlamaFCHandler,
-    "meta-llama/Llama-3.1-70B-Instruct-FC": LlamaFCHandler,
-    "meta-llama/Llama-3.2-1B-Instruct-FC": LlamaFCHandler,
-    "meta-llama/Llama-3.2-3B-Instruct-FC": LlamaFCHandler,
     "meta-llama/Llama-3.1-8B-Instruct": LlamaHandler,
+    "meta-llama/Llama-3.1-70B-Instruct-FC": LlamaFCHandler,
     "meta-llama/Llama-3.1-70B-Instruct": LlamaHandler,
     "meta-llama/Llama-3.2-1B-Instruct": LlamaHandler,
     "meta-llama/Llama-3.2-3B-Instruct": LlamaHandler,

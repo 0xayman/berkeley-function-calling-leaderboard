@@ -144,6 +144,7 @@ def multi_turn_runner(
             temp["model_result_raw"] = multi_turn_model_result_list
             temp["model_result_decoded"] = multi_turn_model_result_list_decoded
             temp["possible_answer"] = multi_turn_ground_truth_list
+            temp["inference_log"] = model_result[i].get("inference_log", "")
             result.append(temp)
         else:
             correct_count += 1
@@ -600,10 +601,10 @@ def runner(model_names, test_categories, api_sanity_check):
     )
 
     print(
-        f"🏁 Evaluation completed. See {SCORE_PATH / 'data_overall.csv'} for evaluation results on BFCL V3."
+        f"🏁 Evaluation completed. See {SCORE_PATH / 'data_overall.csv'} for overall evaluation results on BFCL V3."
     )
     print(
-        f"See {SCORE_PATH / 'data_live.csv'} and {SCORE_PATH / 'data_non_live.csv'} for evaluation results on BFCL V3 Live and Non-Live categories respectively."
+        f"See {SCORE_PATH / 'data_live.csv'}, {SCORE_PATH / 'data_non_live.csv'} and {SCORE_PATH / 'data_multi_turn.csv'} for detailed evaluation results on each sub-section categories respectively."
     )
 
 

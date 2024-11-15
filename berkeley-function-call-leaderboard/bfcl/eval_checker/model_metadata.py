@@ -451,18 +451,6 @@ MODEL_METADATA_MAPPING = {
         "Meta",
         "Meta Llama 3 Community",
     ],
-    "meta-llama/Llama-3.2-1B-Instruct-FC": [
-        "Llama-3.2-1B-Instruct (FC)",
-        "https://llama.meta.com/llama3",
-        "Meta",
-        "Meta Llama 3 Community",
-    ],
-    "meta-llama/Llama-3.2-3B-Instruct-FC": [
-        "Llama-3.2-3B-Instruct (FC)",
-        "https://llama.meta.com/llama3",
-        "Meta",
-        "Meta Llama 3 Community",
-    ],
     "command-r-plus-FC": [
         "Command-R-Plus (FC) (Original)",
         "https://txt.cohere.com/command-r-plus-microsoft-azure",
@@ -685,6 +673,12 @@ MODEL_METADATA_MAPPING = {
         "openbmb",
         "Apache-2.0",
     ],
+    "BitAgent/GoGoAgent": [
+        "GoGoAgent",
+        "https://gogoagent.ai",
+        "BitAgent",
+        "Proprietary",
+    ],
 }
 
 INPUT_PRICE_PER_MILLION_TOKEN = {
@@ -832,4 +826,5 @@ NO_COST_MODELS += [
     "MadeAgents/Hammer2.0-3b",
     "MadeAgents/Hammer2.0-1.5b",
     "MadeAgents/Hammer2.0-0.5b",
+    "BitAgent/GoGoAgent",
 ]
