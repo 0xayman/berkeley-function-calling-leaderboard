@@ -628,6 +628,14 @@ MODEL_METADATA_MAPPING = {
         "apache-2.0",
     ],
 
+    # Additional models
+    "Qwen/Qwen2.5-0.5B-Instruct": [
+        "Qwen2.5-0.5B-Instruct (Prompt)",
+        "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
+        "Qwen",
+        "apache-2.0",
+    ],
+
     "Qwen/Qwen2.5-Coder-1.5B-Instruct": [
         "Qwen2.5-Coder-1.5B-Instruct (Prompt)",
         "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct",
