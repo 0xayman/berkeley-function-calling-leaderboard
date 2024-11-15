@@ -129,6 +129,7 @@ local_inference_handler_map = {
     "Qwen/Qwen2.5-0.5B-Instruct": QwenHandler,
     "Qwen/Qwen2.5-Coder-0.5B-Instruct": QwenHandler,
     "Qwen/Qwen2.5-Coder-1.5B-Instruct": QwenHandler,
+    "0xayman/Qwen2.5-Coder-0.5B-fc-v1-merged": QwenHandler,
     
     # Custom models
     "0xayman/Qwen2.5-Coder-1.5B-fc-v1": QwenHandler,
