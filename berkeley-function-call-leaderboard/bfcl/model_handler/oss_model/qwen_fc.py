@@ -20,36 +20,43 @@ class QwenFcHandler(OSSHandler):
         return formatted_prompt
     
     def decode_ast(self, result, language="Python"):
-        # The results looks like this:
-        # \n<tool_call>\n{"name": "live_giveaways_by_type", "arguments": {"type": "beta"}}\n</tool_call>\n<tool_call>\n{"name": "live_giveaways_by_type", "arguments": {"type": "game"}}\n</tool_call>\n
-        # We need to extract the function calls from the result
-        pattern = r"<tool_call>\s*(\{.*?\})\s*</tool_call>"
-        matches = re.findall(pattern, result, re.DOTALL)
+        lines = result.split("\n")
+        flag = False
+        func_call = []
+        for line in lines:
+            if "<tool_call>" == line:
+                flag = True
+            elif "</tool_call>" == line:
+                flag = False
+            else:
+                if flag:
+                    line = line.replace("'", '"')
+                    tool_result = json.loads(line)
+                    func_call.append({tool_result["name"]: tool_result["arguments"]})
+                flag = False
+        return func_call
 
-        tool_calls = [json.loads(match) for match in matches]
-
-        decoded_output = []
-        for tool_call in tool_calls:
-            function_name = tool_call["name"]
-            arguments = tool_call["arguments"]
-            decoded = {
-                function_name: arguments
-            }
-            decoded_output.append(decoded)
-
-        return decoded_output
-    
     def decode_execute(self, result):
-        pattern = r"<tool_call>\s*(\{.*?\})\s*</tool_call>"
-        matches = re.findall(pattern, result, re.DOTALL)
-
-        tool_calls = [json.loads(match) for match in matches]
-
+        lines = result.split("\n")
+        flag = False
+        function_call_list = []
+        for line in lines:
+            if "<tool_call>" == line:
+                flag = True
+            elif "</tool_call>" == line:
+                flag = False
+            else:
+                if flag:
+                    line = line.replace("'", '"')
+                    tool_result = json.loads(line)
+                    function_call_list.append(
+                        {tool_result["name"]: tool_result["arguments"]}
+                    )
+                flag = False
         execution_list = []
-        for tool_call in tool_calls:
-            function_name = tool_call["name"]
-            arguments = tool_call["arguments"]
-            execution = f"{function_name}({','.join([f'{k}={v}' for k, v in arguments.items()])})"
-            execution_list.append(execution)
-
+        for function_call in function_call_list:
+            for key, value in function_call.items():
+                execution_list.append(
+                    f"{key}({','.join([f'{k}={repr(v)}' for k,v in value.items()])})"
+                )
         return execution_list
