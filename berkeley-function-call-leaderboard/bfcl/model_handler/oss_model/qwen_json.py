@@ -6,7 +6,24 @@ class QwenJsonHandler(OSSHandler):
     def __init__(self, model_name, temperature) -> None:
         super().__init__(model_name, temperature)
 
+    def _convert_functions_to_qwen_format(self, functions):
+        if isinstance(functions, dict):
+            return {
+                "name": functions["name"],
+                "description": functions["description"],
+                "parameters": {
+                    k: v for k, v in functions["parameters"].get("properties", {}).items()
+                }
+            }
+        elif isinstance(functions, list):
+            return [self._convert_functions_to_qwen_format(f) for f in functions]
+        else:
+            return functions
+
     def _format_prompt(self, messages, function):
+        # We first format the function signature and then add the messages
+        function = self._convert_functions_to_qwen_format(function)
+
         formatted_prompt = f"""<|im_start|>system
         You are helpful AI assistant with tool calling capabilities.
         Current Date: 2024-11-15
