@@ -617,6 +617,13 @@ MODEL_METADATA_MAPPING = {
     ],
 
     # Additional models
+    "HuggingFaceTB/SmolLM2-1.7B-Instruct": [
+        "SmolLM2-1.7B-Instruct (Prompt)",
+        "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct",
+        "HuggingFaceTB",
+        "apache-2.0",
+    ],
+
     "Qwen/Qwen2.5-0.5B-Instruct": [
         "Qwen2.5-0.5B-Instruct (Prompt)",
         "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct",
