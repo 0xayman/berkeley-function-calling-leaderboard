@@ -614,12 +614,20 @@ MODEL_METADATA_MAPPING = {
         "MIT",
     ],
     
+    # Custom models
     "0xayman/Qwen2.5-Coder-1.5B-fc-v1": [
         "Qwen2.5-Coder-1.5B-fc-v1 (Prompt)",
         "https://huggingface.co/0xayman/Qwen2.5-Coder-1.5B-fc-v1",
         "Ayman",
         "apache-2.0",
     ],
+    "0xayman/Qwen2.5-Coder-0.5B-fc-v1": [
+        "Qwen2.5-Coder-0.5B-fc-v1 (Prompt)",
+        "https://huggingface.co/0xayman/Qwen2.5-Coder-0.5B-fc-v1",
+        "Ayman",
+        "apache-2.0",
+    ],
+
     "Qwen/Qwen2.5-Coder-1.5B-Instruct": [
         "Qwen2.5-Coder-1.5B-Instruct (Prompt)",
         "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct",
