@@ -53,6 +53,7 @@ class QwenJsonHandler(OSSHandler):
     def decode_ast(self, result, language="Python"):
         # The output is a list of dictionaries, where each dictionary contains the function name and its arguments
         result = result.strip()
+        result = result.replace("'", '"') # replace single quotes with double quotes
         result = json.loads(result)
 
         func_calls = []
@@ -66,6 +67,7 @@ class QwenJsonHandler(OSSHandler):
     def decode_execute(self, result):
         # The output is a list of dictionaries, where each dictionary contains the function name and its arguments
         result = result.strip()
+        result = result.replace("'", '"') # replace single quotes with double quotes
         result = json.loads(result)
 
         # put the functions in format function_name(arguments)
