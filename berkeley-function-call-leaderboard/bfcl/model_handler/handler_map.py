@@ -135,6 +135,7 @@ local_inference_handler_map = {
     # Custom models
     "0xayman/Qwen2.5-Coder-0.5B-fc-v1-merged": QwenFcHandler,
     "0xayman/Qwen2.5-Coder-1.5B-fc-v1": QwenJsonHandler,
+    "0xayman/Qwen2.5-Coder-0.5B-fc-v1-json": QwenJsonHandler,
 
     "0xayman/Qwen2.5-Coder-0.5B-fc-v1": QwenHandler,
     "HuggingFaceTB/SmolLM2-1.7B-Instruct": QwenHandler,
