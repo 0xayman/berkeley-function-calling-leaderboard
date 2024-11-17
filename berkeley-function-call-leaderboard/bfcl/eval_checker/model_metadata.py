@@ -633,6 +633,12 @@ MODEL_METADATA_MAPPING = {
         "Ayman",
         "apache-2.0",
     ],
+    "0xayman/Qwen-1.5B-fc-v1": [
+        "Qwen-1.5B-fc-v1 (Prompt)",
+        "https://huggingface.co/0xayman/Qwen-1.5B-fc-v1",
+        "Ayman",
+        "apache-2.0",
+    ],
 
     # Additional models
     "HuggingFaceTB/SmolLM2-1.7B-Instruct": [
