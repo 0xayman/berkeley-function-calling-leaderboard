@@ -88,6 +88,7 @@ api_inference_handler_map = {
 
 # Inference through local hosting
 local_inference_handler_map = {
+    "0xayman/Qwen2.5-0.5B-fc-v1-json": QwenJsonHandler,
     "google/gemma-2-2b-it": GemmaHandler,
     "google/gemma-2-9b-it": GemmaHandler,
     "google/gemma-2-27b-it": GemmaHandler,
@@ -132,20 +133,6 @@ local_inference_handler_map = {
     "Qwen/Qwen2.5-Coder-0.5B-Instruct": QwenHandler,
     "Qwen/Qwen2.5-Coder-1.5B-Instruct": QwenHandler,
     
-    # Custom models
-    "0xayman/Qwen2.5-Coder-0.5B-fc-v1-merged": QwenFcHandler,
-    "0xayman/Qwen2.5-Coder-1.5B-fc-v1": QwenJsonHandler,
-    "0xayman/Qwen2.5-Coder-0.5B-fc-v1-json": QwenJsonHandler,
-    "0xayman/Qwen2.5-Coder-0.5B-fc-v2-json-masked": QwenJsonHandler,
-    "0xayman/Qwen-1.5B-fc-v1": QwenJsonHandler,
-    "0xayman/Qwen2.5-1.5B-fc-json": QwenJsonHandler,
-    "0xayman/Qwen2.5-0.5B-fc-v1-json-signatures": QwenJsonHandler,
-    "0xayman/Qwen2.5-0.5B-FC": QwenJsonHandler,
-    "0xayman/Qwen2.5-0.5B-tool-use": QwenJsonHandler,
-
-    "0xayman/Qwen2.5-Coder-0.5B-fc-v1": QwenHandler,
-    "HuggingFaceTB/SmolLM2-1.7B-Instruct": QwenHandler,
-
     "Team-ACE/ToolACE-8B": LlamaHandler,
     "openbmb/MiniCPM3-4B": MiniCPMHandler,
 }

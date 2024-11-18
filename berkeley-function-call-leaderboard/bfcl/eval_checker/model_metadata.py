@@ -1,6 +1,13 @@
 from bfcl.model_handler.handler_map import local_inference_handler_map
 
 MODEL_METADATA_MAPPING = {
+    "0xayman/Qwen2.5-0.5B-fc-v1-json": [
+        "Qwen2.5-0.5B-fc-v1-json (FC)",
+        "https://huggingface.co/0xayman/Qwen2.5-0.5B-fc-v1-json",
+        "0xayman",
+        "apache-2.0",
+    ],
+
     "o1-preview-2024-09-12": [
         "o1-preview-2024-09-12 (Prompt)",
         "https://openai.com/index/introducing-openai-o1-preview/",
@@ -602,75 +609,6 @@ MODEL_METADATA_MAPPING = {
         "MIT",
     ],
     
-    # Custom models
-    "0xayman/Qwen2.5-Coder-1.5B-fc-v1": [
-        "Qwen2.5-Coder-1.5B-fc-v1 (Prompt)",
-        "https://huggingface.co/0xayman/Qwen2.5-Coder-1.5B-fc-v1",
-        "Ayman",
-        "apache-2.0",
-    ],
-    "0xayman/Qwen2.5-Coder-0.5B-fc-v1": [
-        "Qwen2.5-Coder-0.5B-fc-v1 (Prompt)",
-        "https://huggingface.co/0xayman/Qwen2.5-Coder-0.5B-fc-v1",
-        "Ayman",
-        "apache-2.0",
-    ],
-    "0xayman/Qwen2.5-Coder-0.5B-fc-v1-merged": [
-        "Qwen2.5-Coder-0.5B-fc-v1-merged (Prompt)",
-        "https://huggingface.co/0xayman/Qwen2.5-Coder-0.5B-fc-v1-merged",
-        "Ayman",
-        "apache-2.0",
-    ],
-    "0xayman/Qwen2.5-Coder-0.5B-fc-v1-json": [
-        "Qwen2.5-Coder-0.5B-fc-v1-json (Prompt)",
-        "https://huggingface.co/0xayman/Qwen2.5-Coder-0.5B-fc-v1-json",
-        "Ayman",
-        "apache-2.0",
-    ],
-    "0xayman/Qwen2.5-Coder-0.5B-fc-v2-json-masked": [
-        "Qwen2.5-Coder-0.5B-fc-v2-json-masked (Prompt)",
-        "https://huggingface.co/0xayman/Qwen2.5-Coder-0.5B-fc-v2-json-masked",
-        "Ayman",
-        "apache-2.0",
-    ],
-    "0xayman/Qwen-1.5B-fc-v1": [
-        "Qwen-1.5B-fc-v1 (Prompt)",
-        "https://huggingface.co/0xayman/Qwen-1.5B-fc-v1",
-        "Ayman",
-        "apache-2.0",
-    ],
-    "0xayman/Qwen2.5-1.5B-fc-json": [
-        "Qwen2.5-1.5B-fc-json (Prompt)",
-        "https://huggingface.co/0xayman/Qwen2.5-1.5B-fc-json",
-        "Ayman",
-        "apache-2.0",
-    ],
-    "0xayman/Qwen2.5-0.5B-fc-v1-json-signatures": [
-        "Qwen2.5-0.5B-fc-v1-json-signatures (Prompt)",
-        "https://huggingface.co/0xayman/Qwen2.5-0.5B-fc-v1-json-signatures",
-        "Ayman",
-        "apache-2.0",
-    ],
-    "0xayman/Qwen2.5-0.5B-FC": [
-        "Qwen2.5-0.5B-FC (Prompt)",
-        "https://huggingface.co/0xayman/Qwen2.5-0.5B-FC",
-        "Ayman",
-        "apache-2.0",
-    ],
-    "0xayman/Qwen2.5-0.5B-tool-use": [
-        "Qwen2.5-0.5B-tool-use (Prompt)",
-        "https://huggingface.co/0xayman/Qwen2.5-0.5B-tool-use",
-        "Ayman",
-        "apache-2.0",
-    ],
-
-    # Additional models
-    "HuggingFaceTB/SmolLM2-1.7B-Instruct": [
-        "SmolLM2-1.7B-Instruct (Prompt)",
-        "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct",
-        "HuggingFaceTB",
-        "apache-2.0",
-    ],
 
     "Qwen/Qwen2.5-0.5B-Instruct": [
         "Qwen2.5-0.5B-Instruct (Prompt)",
