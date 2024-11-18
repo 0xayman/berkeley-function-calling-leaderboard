@@ -37,6 +37,8 @@ class QwenJsonHandler(OSSHandler):
         </tools>
 
         For each function call, return a JSON object with function name and arguments.
+        Ensure that the arguments have the correct data types.
+        Ensure required arguments are provided. Use default values where possible.
         Your output should be in the following format:
         [
             {{"name": <function-name>, "arguments": <args-json-object>}}
