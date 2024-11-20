@@ -8,6 +8,13 @@ MODEL_METADATA_MAPPING = {
         "apache-2.0",
     ],
 
+    "0xayman/Qwen2.5-0.5B-fc-v2-json-masked": [
+        "Qwen2.5-0.5B-fc-v2-json-masked (FC)",
+        "https://huggingface.co/0xayman/Qwen2.5-0.5B-fc-v2-json-masked",
+        "0xayman",
+        "apache-2.0",
+    ],
+
     "o1-preview-2024-09-12": [
         "o1-preview-2024-09-12 (Prompt)",
         "https://openai.com/index/introducing-openai-o1-preview/",
