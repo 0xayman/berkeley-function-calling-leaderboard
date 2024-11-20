@@ -89,7 +89,7 @@ api_inference_handler_map = {
 # Inference through local hosting
 local_inference_handler_map = {
     "0xayman/Qwen2.5-0.5B-fc-v1-json": QwenJsonHandler,
-    "0xayman/Qwen2.5-0.5B-fc-v2-json-masked": QwenJsonHandler,
+    "0xayman/Qwen2.5-0.5B-fc-v2-json": QwenJsonHandler,
     
     "google/gemma-2-2b-it": GemmaHandler,
     "google/gemma-2-9b-it": GemmaHandler,

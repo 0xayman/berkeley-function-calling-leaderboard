@@ -8,9 +8,9 @@ MODEL_METADATA_MAPPING = {
         "apache-2.0",
     ],
 
-    "0xayman/Qwen2.5-0.5B-fc-v2-json-masked": [
-        "Qwen2.5-0.5B-fc-v2-json-masked (FC)",
-        "https://huggingface.co/0xayman/Qwen2.5-0.5B-fc-v2-json-masked",
+    "0xayman/Qwen2.5-0.5B-fc-v2-json": [
+        "Qwen2.5-0.5B-fc-v2-json (FC)",
+        "https://huggingface.co/0xayman/Qwen2.5-0.5B-fc-v2-json",
         "0xayman",
         "apache-2.0",
     ],
