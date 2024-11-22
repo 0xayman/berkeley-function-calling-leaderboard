@@ -26,6 +26,12 @@ MODEL_METADATA_MAPPING = {
         "0xayman",
         "apache-2.0",
     ],
+    "0xayman/Qwen2.5-0.5B-fc-v1-json-cot": [
+        "Qwen2.5-0.5B-fc-v1-json-cot (FC)",
+        "https://huggingface.co/0xayman/Qwen2.5-0.5B-fc-v1-json-cot",
+        "0xayman",
+        "apache-2.0",
+    ],
 
     "o1-preview-2024-09-12": [
         "o1-preview-2024-09-12 (Prompt)",

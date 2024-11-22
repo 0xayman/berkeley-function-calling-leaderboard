@@ -89,6 +89,7 @@ api_inference_handler_map = {
 # Inference through local hosting
 local_inference_handler_map = {
     "0xayman/Qwen2.5-0.5B-fc-v1-json": QwenJsonHandler,
+    "0xayman/Qwen2.5-0.5B-fc-v1-json-cot": QwenJsonHandler,
     "0xayman/Qwen2.5-0.5B-fc-v2-json": QwenJsonHandler,
     "0xayman/Qwen2.5-0.5B-fc-v3-json": QwenJsonHandler,
     "0xayman/Qwen2.5-0.5B-fc-v2-json-missing-args-detection": QwenJsonHandler,
