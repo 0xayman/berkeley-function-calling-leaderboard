@@ -14,21 +14,9 @@ MODEL_METADATA_MAPPING = {
         "0xayman",
         "apache-2.0",
     ],
-    "0xayman/Qwen2.5-0.5B-fc-v3-json": [
-        "Qwen2.5-0.5B-fc-v3-json (FC)",
-        "https://huggingface.co/0xayman/Qwen2.5-0.5B-fc-v3-json",
-        "0xayman",
-        "apache-2.0",
-    ],
-    "0xayman/Qwen2.5-0.5B-fc-v2-json-missing-args-detection": [
-        "Qwen2.5-0.5B-fc-v2-json-missing-args-detection (FC)",
-        "https://huggingface.co/0xayman/Qwen2.5-0.5B-fc-v2-json-missing-args-detection",
-        "0xayman",
-        "apache-2.0",
-    ],
-    "0xayman/Qwen2.5-0.5B-fc-v1-json-cot": [
-        "Qwen2.5-0.5B-fc-v1-json-cot (FC)",
-        "https://huggingface.co/0xayman/Qwen2.5-0.5B-fc-v1-json-cot",
+    "0xayman/Qwen2.5-0.5-fc-v3": [
+        "Qwen2.5-0.5-fc-v3 (FC)",
+        "https://huggingface.co/0xayman/Qwen2.5-0.5-fc-v3",
         "0xayman",
         "apache-2.0",
     ],
