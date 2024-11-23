@@ -37,18 +37,8 @@ class QwenJsonHandler(OSSHandler):
         </tools>
 
         For each function call, return a JSON object with function name and arguments.
-
-        # Important Guidelines:
-        1. When extracting the arguments values, you can follow the below steps:
-            - Extract the arguments from the user query.
-            - If the argument value is not provided directly in the user query, try to infer it from the context.
-            - If a default value is provided, and it is suitable for the context, use it.
-            - Perform any necessary data type conversions.
-            - Some arguments may requires mathematical calculations to be in the correct format.
-            - You can also use your internal knowledge to infer the argument values.
-        2. Ensure that the arguments have the correct data types.
-        3. Ensure required arguments are provided. 
-
+        Ensure that the arguments have the correct data types.
+        Ensure required arguments are provided. Use default values where possible.
         Your output should be in the following format:
         [
             {{"name": <function-name>, "arguments": <args-json-object>}}
