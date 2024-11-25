@@ -20,6 +20,12 @@ MODEL_METADATA_MAPPING = {
         "0xayman",
         "apache-2.0",
     ],
+    "HuggingFaceTB/SmolLM2-1.7B-Instruct": [
+        "SmolLM2-1.7B-Instruct (Prompt)",
+        "https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct",
+        "HuggingFaceTB",
+        "apache-2.0",
+    ],
 
     "o1-preview-2024-09-12": [
         "o1-preview-2024-09-12 (Prompt)",
