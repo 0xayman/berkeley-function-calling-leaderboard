@@ -36,13 +36,21 @@ class QwenJsonHandler(OSSHandler):
         {function}
         </tools>
 
-        For each function call, return a JSON object with function name and arguments.
-        Ensure that the arguments have the correct data types.
-        Ensure required arguments are provided. Use default values where possible.
-        Your output should be in the following format:
-        [
-            {{"name": <function-name>, "arguments": <args-json-object>}}
-        ]
+        Start by answering the following questions, then construct the required function calls.
+        1. What are the most releveant functions to the user query. any why?
+        2. What aret the required arguments ? and what are their associated values ?
+        3. List any required mathematical calculations or format transformations.
+
+        For each function call, return a json object with function name and arguments.
+        The output MUST strictly adhere to the following JSON format, and NO other text MUST be included.
+        The example format is as follows. Please make sure the parameter type is correct.
+        {{
+            "thought": "answers to the above questions."
+            "function_calls": [
+                {{"name": "func_name1", "arguments": {{"argument1": "value1", "argument2": "value2"}}}},
+                ... (more tool calls as required)
+            ]
+        }}
         <|im_end|>
 """
         
@@ -57,6 +65,7 @@ class QwenJsonHandler(OSSHandler):
         result = result.strip()
         result = result.replace("'", '"') # replace single quotes with double quotes
         result = json.loads(result)
+        result = result["function_calls"]
 
         func_calls = []
         for item in result:
@@ -71,6 +80,7 @@ class QwenJsonHandler(OSSHandler):
         result = result.strip()
         result = result.replace("'", '"') # replace single quotes with double quotes
         result = json.loads(result)
+        result = result["function_calls"]
 
         # put the functions in format function_name(arguments)
         function_call_list = []
