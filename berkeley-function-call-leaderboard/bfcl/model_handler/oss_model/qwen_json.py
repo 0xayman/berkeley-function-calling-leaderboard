@@ -65,7 +65,6 @@ class QwenJsonHandler(OSSHandler):
         result = result.strip()
         result = result.replace("'", '"') # replace single quotes with double quotes
         result = json.loads(result)
-        result = result["function_calls"]
 
         func_calls = []
         for item in result:
@@ -80,7 +79,6 @@ class QwenJsonHandler(OSSHandler):
         result = result.strip()
         result = result.replace("'", '"') # replace single quotes with double quotes
         result = json.loads(result)
-        result = result["function_calls"]
 
         # put the functions in format function_name(arguments)
         function_call_list = []
@@ -96,3 +94,17 @@ class QwenJsonHandler(OSSHandler):
                     f"{key}({','.join([f'{k}={repr(v)}' for k,v in value.items()])})"
                 )
         return execution_list
+    
+    def _parse_query_response_prompting(self, api_response: any) -> dict:
+        if api_response["choices"][0]["message"]["function_calls"] != []:
+            return {
+                "model_responses": api_response["choices"][0]["message"]["function_calls"],
+                "input_token": 0,
+                "output_token": 0,
+            }
+        else:
+            return {
+                "model_responses": api_response["choices"][0]["message"]["content"],
+                "input_token": 0,
+                "output_token": 0,
+            }
