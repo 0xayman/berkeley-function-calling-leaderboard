@@ -36,21 +36,13 @@ class QwenJsonHandler(OSSHandler):
         {function}
         </tools>
 
-        Start by answering the following questions, then construct the required function calls.
-        1. What are the most releveant functions to the user query. any why?
-        2. What aret the required arguments ? and what are their associated values ?
-        3. List any required mathematical calculations or format transformations.
-
-        For each function call, return a json object with function name and arguments.
-        The output MUST strictly adhere to the following JSON format, and NO other text MUST be included.
-        The example format is as follows. Please make sure the parameter type is correct.
-        {{
-            "thought": "answers to the above questions."
-            "function_calls": [
-                {{"name": "func_name1", "arguments": {{"argument1": "value1", "argument2": "value2"}}}},
-                ... (more tool calls as required)
-            ]
-        }}
+        For each function call, return a JSON object with function name and arguments.
+        Ensure that the arguments have the correct data types.
+        Ensure required arguments are provided. Use default values where possible.
+        Your output should be in the following format:
+        [
+            {{"name": <function-name>, "arguments": <args-json-object>}}
+        ]
         <|im_end|>
 """
         
@@ -60,19 +52,11 @@ class QwenJsonHandler(OSSHandler):
         formatted_prompt += "<|im_start|>assistant\n"
         return formatted_prompt
     
-    def get_json(self, result):
-        # The output is a list of dictionaries, where each dictionary contains the function name and its arguments
-        result = result.strip()
-
-        result = json.loads(result)
-        result = result["function_calls"]
-        result = json.loads(result)
-
-        return result
-    
     def decode_ast(self, result, language="Python"):
         # The output is a list of dictionaries, where each dictionary contains the function name and its arguments
-        result = self.get_json(result)
+        result = result.strip()
+        result = result.replace("'", '"') # replace single quotes with double quotes
+        result = json.loads(result)
 
         func_calls = []
         for item in result:
@@ -84,7 +68,9 @@ class QwenJsonHandler(OSSHandler):
     
     def decode_execute(self, result):
         # The output is a list of dictionaries, where each dictionary contains the function name and its arguments
-        result = self.get_json(result)
+        result = result.strip()
+        result = result.replace("'", '"') # replace single quotes with double quotes
+        result = json.loads(result)
 
         # put the functions in format function_name(arguments)
         function_call_list = []
