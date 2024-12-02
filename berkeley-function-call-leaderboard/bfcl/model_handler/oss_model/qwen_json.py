@@ -60,12 +60,19 @@ class QwenJsonHandler(OSSHandler):
         formatted_prompt += "<|im_start|>assistant\n"
         return formatted_prompt
     
-    def decode_ast(self, result, language="Python"):
+    def get_json(self, result):
         # The output is a list of dictionaries, where each dictionary contains the function name and its arguments
         result = result.strip()
-        result = result.replace("'", '"') # replace single quotes with double quotes
+
         result = json.loads(result)
         result = result["function_calls"]
+        result = json.loads(result)
+
+        return result
+    
+    def decode_ast(self, result, language="Python"):
+        # The output is a list of dictionaries, where each dictionary contains the function name and its arguments
+        result = self.get_json(result)
 
         func_calls = []
         for item in result:
@@ -77,10 +84,7 @@ class QwenJsonHandler(OSSHandler):
     
     def decode_execute(self, result):
         # The output is a list of dictionaries, where each dictionary contains the function name and its arguments
-        result = result.strip()
-        result = result.replace("'", '"') # replace single quotes with double quotes
-        result = json.loads(result)
-        result = result["function_calls"]
+        result = self.get_json(result)
 
         # put the functions in format function_name(arguments)
         function_call_list = []
