@@ -99,6 +99,7 @@ local_inference_handler_map = {
     "0xayman/Qwen2.5-0.5B-fc-json-cot-v5": QwenJsonHandler,
     "0xayman/Qwen2.5-0.5B-fc-json-v3": QwenJsonHandler,
     "HuggingFaceTB/SmolLM2-1.7B-Instruct": SmolLMHandler,
+    "HuggingFaceTB/SmolLM2-360M-Instruct": SmolLMHandler,
     
     "google/gemma-2-2b-it": GemmaHandler,
     "google/gemma-2-9b-it": GemmaHandler,

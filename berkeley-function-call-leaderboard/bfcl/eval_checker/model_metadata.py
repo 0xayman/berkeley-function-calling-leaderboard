@@ -57,6 +57,12 @@ MODEL_METADATA_MAPPING = {
         "HuggingFaceTB",
         "apache-2.0",
     ],
+    "HuggingFaceTB/SmolLM2-360M-Instruct": [
+        "SmolLM2-360M-Instruct (Prompt)",
+        "https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct",
+        "HuggingFaceTB",
+        "apache-2.0",
+    ],
 
     "o1-preview-2024-09-12": [
         "o1-preview-2024-09-12 (Prompt)",
