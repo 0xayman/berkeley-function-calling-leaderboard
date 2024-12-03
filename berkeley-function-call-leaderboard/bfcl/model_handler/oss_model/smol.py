@@ -25,20 +25,25 @@ class SmolLMHandler(OSSHandler):
         function = self._convert_functions_to_qwen_format(function)
 
         formatted_prompt = f"""<|im_start|>system
-You are an expert in composing functions. You are given a question and a set of possible functions. 
-Based on the question, you will need to make one or more function/tool calls to achieve the purpose. 
-If none of the functions can be used, point it out and refuse to answer. 
-If the given question lacks the parameters required by the function, also point it out.
+You are helpful AI assistant with tool calling capabilities.
 
-You have access to the following tools:
-<tools>{function}</tools>
+# Tools
 
-The output MUST strictly adhere to the following format, and NO other text MUST be included.
-The example format is as follows. Please make sure the parameter type is correct. If no function call is needed, please make the tool calls an empty list '[]'.
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
+{function}
+</tools>
+
+For each function call, return a json object with function name and arguments.
+The output MUST strictly adhere to the following JSON format, and NO other text MUST be included.
+The example format is as follows. Please make sure the parameter type is correct.
 [
     {{"name": "func_name1", "arguments": {{"argument1": "value1", "argument2": "value2"}}}},
-(more tool calls as required)
-]<|im_end|>
+    ... (more tool calls as required)
+]
+<|im_end|>
 """
         
         for message in messages:

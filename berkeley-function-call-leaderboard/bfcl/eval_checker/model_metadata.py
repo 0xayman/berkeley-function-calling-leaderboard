@@ -63,6 +63,12 @@ MODEL_METADATA_MAPPING = {
         "HuggingFaceTB",
         "apache-2.0",
     ],
+    "0xayman/SmolLM2-360M-FC-v1": [
+        "SmolLM2-360M-FC-v1 (FC)",
+        "https://huggingface.co/0xayman/SmolLM2-360M-FC-v1",
+        "0xayman",
+        "apache-2.0",
+    ],
 
     "o1-preview-2024-09-12": [
         "o1-preview-2024-09-12 (Prompt)",
