@@ -20,13 +20,12 @@ MODEL_METADATA_MAPPING = {
         "0xayman",
         "apache-2.0",
     ],
-    "0xayman/Qwen2.5-0.5B-fc-json-v4": [
-        "Qwen2.5-0.5B-fc-json-v4 (FC)",
-        "https://huggingface.co/0xayman/Qwen2.5-0.5B-fc-json-v4",
+    "0xayman/Qwen2.5-0.5B-fc-json-cot-v1": [
+        "Qwen2.5-0.5B-fc-json-cot-v1 (FC)",
+        "https://huggingface.co/0xayman/Qwen2.5-0.5B-fc-json-cot-v1",
         "0xayman",
         "apache-2.0",
     ],
-
 
     "HuggingFaceTB/SmolLM2-1.7B-Instruct": [
         "SmolLM2-1.7B-Instruct (Prompt)",
