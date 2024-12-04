@@ -12,6 +12,7 @@ from bfcl.model_handler.oss_model.salesforce import SalesforceHandler
 from bfcl.model_handler.oss_model.qwen import QwenHandler
 from bfcl.model_handler.oss_model.qwen_fc import QwenFcHandler
 from bfcl.model_handler.oss_model.qwen_json import QwenJsonHandler
+from bfcl.model_handler.oss_model.llama_json import LlamaJsonHandler
 from bfcl.model_handler.oss_model.qwen_cot import QwenCotHandler
 from bfcl.model_handler.oss_model.smol import SmolLMHandler
 from bfcl.model_handler.oss_model.minicpm import MiniCPMHandler
@@ -101,6 +102,7 @@ local_inference_handler_map = {
     "HuggingFaceTB/SmolLM2-1.7B-Instruct": SmolLMHandler,
     "HuggingFaceTB/SmolLM2-360M-Instruct": SmolLMHandler,
     "0xayman/SmolLM2-360M-FC-v1": SmolLMHandler,
+    "0xayman/Llama-3.2-1B-FC-v1": LlamaJsonHandler,
     
     "google/gemma-2-2b-it": GemmaHandler,
     "google/gemma-2-9b-it": GemmaHandler,

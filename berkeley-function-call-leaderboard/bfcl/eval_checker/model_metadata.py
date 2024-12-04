@@ -50,6 +50,12 @@ MODEL_METADATA_MAPPING = {
         "0xayman",
         "apache-2.0",
     ],
+    "0xayman/Llama-3.2-1B-FC-v1": [
+        "Llama-3.2-1B-FC-v1 (FC)",
+        "https://huggingface.co/0xayman/Llama-3.2-1B-FC-v1",
+        "0xayman",
+        "apache-2.0",
+    ],
 
     "HuggingFaceTB/SmolLM2-1.7B-Instruct": [
         "SmolLM2-1.7B-Instruct (Prompt)",
