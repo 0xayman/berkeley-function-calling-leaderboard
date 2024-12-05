@@ -25,23 +25,24 @@ class LlamaJsonHandler(OSSHandler):
         function = self._convert_functions_to_qwen_format(function)
 
         formatted_prompt = f"""<|start_header_id|>system<|end_header_id|>
-You are an expert in composing functions. You are given a question and a set of possible functions. 
-Based on the question, you will need to make one or more function/tool calls to achieve the purpose. 
-If none of the functions can be used, point it out. If the given question lacks the parameters required by the function,also point it out. You should only return the function call in tools call sections.
-If you decide to invoke any of the function(s), you MUST put it in the format of:
-[
-    {{
-        "name": "function_name1",
-        "arguments": {{
-            "argument1": "value1",
-            "argument2": "value2"
-        }}
-    }},
-    ...(more tool calls as required)
-]
-You SHOULD NOT include any other text in the response.
-Here is a list of functions in JSON format that you can invoke.
+You are helpful AI assistant with tool calling capabilities.
+
+# Tools
+
+You may call one or more functions to assist with the user query.
+
+You are provided with function signatures within <tools></tools> XML tags:
+<tools>
 {function}
+</tools>
+
+For each function call, return a json object with function name and arguments.
+The output MUST strictly adhere to the following JSON format, and NO other text MUST be included.
+The example format is as follows. Please make sure the parameter type is correct.
+[
+    {{"name": "func_name1", "arguments": {{"argument1": "value1", "argument2": "value2"}}}},
+    ... (more tool calls as required)
+]
 <|eot_id|>
 """
         
