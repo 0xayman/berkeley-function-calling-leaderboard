@@ -6,7 +6,7 @@ class LlamaJsonHandler(OSSHandler):
     def __init__(self, model_name, temperature) -> None:
         super().__init__(model_name, temperature)
 
-    def _convert_functions_to_qwen_format(self, functions):
+    def _convert_functions_format(self, functions):
         if isinstance(functions, dict):
             return {
                 "name": functions["name"],
@@ -16,38 +16,29 @@ class LlamaJsonHandler(OSSHandler):
                 }
             }
         elif isinstance(functions, list):
-            return [self._convert_functions_to_qwen_format(f) for f in functions]
+            return [self._convert_functions_format(f) for f in functions]
         else:
             return functions
 
     def _format_prompt(self, messages, function):
         # We first format the function signature and then add the messages
-        function = self._convert_functions_to_qwen_format(function)
+        tools = self._convert_functions_format(function)
 
-        formatted_prompt = f"""<|start_header_id|>system<|end_header_id|>
-You are helpful AI assistant with tool calling capabilities.
+        formatted_prompt = f"""<|begin_of_text|><|begin_of_text|><|begin_of_text|><|start_header_id|>system<|end_header_id|>
+Cutting Knowledge Date: December 2023
+Today Date: 07 Dec 2024
 
-# Tools
+<|eot_id|><|start_header_id|>user<|end_header_id|>
 
-You may call one or more functions to assist with the user query.
+Given the following functions, please respond with a JSON for a function call with its proper arguments that best answers the given prompt.
 
-You are provided with function signatures within <tools></tools> XML tags:
-<tools>
-{function}
-</tools>
+Respond in the format {{"name": function name, "parameters": dictionary of argument name and its value}}.Do not use variables.
 
-For each function call, return a json object with function name and arguments.
-The output MUST strictly adhere to the following JSON format, and NO other text MUST be included.
-The example format is as follows. Please make sure the parameter type is correct.
-[
-    {{"name": "func_name1", "arguments": {{"argument1": "value1", "argument2": "value2"}}}},
-    ... (more tool calls as required)
-]
-<|eot_id|>
+{tools}
+
 """
         
         for message in messages:
-            formatted_prompt += f"<|start_header_id|>{message['role']}<|end_header_id|>\n"
             formatted_prompt += f"{message['content']}<|eot_id|>\n"
 
         formatted_prompt += "<|start_header_id|>assistant<|end_header_id|>\n"
