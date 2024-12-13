@@ -14,39 +14,9 @@ MODEL_METADATA_MAPPING = {
         "0xayman",
         "apache-2.0",
     ],
-    "AymanTarig/Qwen2.5-0.5B-fc-v3-json": [
-        "Qwen2.5-0.5B-fc-v3-json (FC)",
-        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-fc-v3-json",
-        "0xayman",
-        "apache-2.0",
-    ],
-    "AymanTarig/Qwen2.5-0.5B-fc-json-cot-v1": [
-        "Qwen2.5-0.5B-fc-json-cot-v1 (FC)",
-        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-fc-json-cot-v1",
-        "0xayman",
-        "apache-2.0",
-    ],
-    "AymanTarig/Qwen2.5-0.5B-fc-json-cot-v2": [
-        "Qwen2.5-0.5B-fc-json-cot-v2 (FC)",
-        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-fc-json-cot-v2",
-        "0xayman",
-        "apache-2.0",
-    ],
-    "AymanTarig/Qwen2.5-0.5B-fc-json-cot-v3": [
-        "Qwen2.5-0.5B-fc-json-cot-v3 (FC)",
-        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-fc-json-cot-v3",
-        "0xayman",
-        "apache-2.0",
-    ],
-    "AymanTarig/Qwen2.5-0.5B-fc-json-cot-v5": [
-        "Qwen2.5-0.5B-fc-json-cot-v5 (FC)",
-        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-fc-json-cot-v5",
-        "0xayman",
-        "apache-2.0",
-    ],
-    "AymanTarig/Qwen2.5-0.5B-fc-json-v3": [
-        "Qwen2.5-0.5B-fc-json-v3 (FC)",
-        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-fc-json-v3",
+    "AymanTarig/Qwen2.5-0.5B-FC-v3": [
+        "Qwen2.5-0.5B-FC-v3 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v3",
         "0xayman",
         "apache-2.0",
     ],
