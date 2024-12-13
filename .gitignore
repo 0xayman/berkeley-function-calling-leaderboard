@@ -6,7 +6,6 @@ dist
 **/*.lic
 .vscode
 .idea
-.env
 .editorconfig
 .DS_Store
 **/*.pyc
@@ -26,8 +25,6 @@ berkeley-function-call-leaderboard/result/
 berkeley-function-call-leaderboard/score/
 
 # Ignore environment variables
-berkeley-function-call-leaderboard/.env
-!berkeley-function-call-leaderboard/.env.example
 
 # Ignore multi turn ground truth conversation log
 berkeley-function-call-leaderboard/utils/ground_truth_conversation/

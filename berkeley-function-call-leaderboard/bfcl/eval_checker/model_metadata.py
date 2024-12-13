@@ -68,6 +68,12 @@ MODEL_METADATA_MAPPING = {
         "0xayman",
         "apache-2.0",
     ],
+    "AymanTarig/Llama-3.2-1B-FC-v4-llama-critique": [
+        "Llama-3.2-1B-FC-v4-llama-critique (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v4-llama-critique",
+        "0xayman",
+        "apache-2.0",
+    ],
 
     "HuggingFaceTB/SmolLM2-1.7B-Instruct": [
         "SmolLM2-1.7B-Instruct (Prompt)",
