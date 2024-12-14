@@ -98,6 +98,7 @@ local_inference_handler_map = {
     "AymanTarig/Llama-3.2-1B-FC-v1.1": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v1.2": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v1.3": LlamaJsonHandler,
+    "AymanTarig/Llama-3.2-1B-FC-v1.4": LlamaJsonHandler,
     
     "google/gemma-2-2b-it": GemmaHandler,
     "google/gemma-2-9b-it": GemmaHandler,
