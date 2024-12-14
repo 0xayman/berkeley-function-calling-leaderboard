@@ -91,13 +91,11 @@ api_inference_handler_map = {
 
 # Inference through local hosting
 local_inference_handler_map = {
-    "AymanTarig/Qwen2.5-0.5B-fc-v1-json": QwenJsonHandler,
-    "AymanTarig/Qwen2.5-0.5B-fc-v2-json": QwenJsonHandler,
-    "AymanTarig/Qwen2.5-0.5B-FC-v3": QwenJsonHandler,
+    "AymanTarig/Qwen2.5-0.5B-FC-v1": QwenJsonHandler,
+    "AymanTarig/Qwen2.5-0.5B-FC-v2": QwenJsonHandler,
+    "AymanTarig/Llama-3.2-1B-FC-v1": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v2": LlamaJsonHandler,
-    "AymanTarig/Llama-3.2-1B-FC-v3-critique": LlamaJsonHandler,
-    "AymanTarig/Llama-3.2-1B-FC-v4-llama-critique": LlamaJsonHandler,
-    "AymanTarig/Llama-3.2-1B-FC-v5": LlamaJsonHandler,
+    "AymanTarig/Llama-3.2-1B-FC-v1.1": LlamaJsonHandler,
     
     "google/gemma-2-2b-it": GemmaHandler,
     "google/gemma-2-9b-it": GemmaHandler,

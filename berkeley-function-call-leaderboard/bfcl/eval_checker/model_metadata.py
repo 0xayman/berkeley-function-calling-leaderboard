@@ -1,47 +1,36 @@
 from bfcl.model_handler.handler_map import local_inference_handler_map
 
 MODEL_METADATA_MAPPING = {
-    "AymanTarig/Qwen2.5-0.5B-fc-v1-json": [
-        "Qwen2.5-0.5B-fc-v1-json (FC)",
-        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-fc-v1-json",
-        "0xayman",
+    "AymanTarig/Qwen2.5-0.5B-FC-v1": [
+        "Qwen2.5-0.5B-FC-v1 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v1",
+        "AymanTarig",
         "apache-2.0",
     ],
 
-    "AymanTarig/Qwen2.5-0.5B-fc-v2-json": [
-        "Qwen2.5-0.5B-fc-v2-json (FC)",
-        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-fc-v2-json",
-        "0xayman",
+    "AymanTarig/Qwen2.5-0.5B-FC-v2": [
+        "Qwen2.5-0.5B-FC-v2 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v2",
+        "AymanTarig",
         "apache-2.0",
     ],
-    "AymanTarig/Qwen2.5-0.5B-FC-v3": [
-        "Qwen2.5-0.5B-FC-v3 (FC)",
-        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v3",
-        "0xayman",
+    
+    "AymanTarig/Llama-3.2-1B-FC-v1": [
+        "Llama-3.2-1B-FC-v1 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v1",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Llama-3.2-1B-FC-v1.1": [
+        "Llama-3.2-1B-FC-v1.1 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v1.1",
+        "AymanTarig",
         "apache-2.0",
     ],
     "AymanTarig/Llama-3.2-1B-FC-v2": [
         "Llama-3.2-1B-FC-v2 (FC)",
         "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v2",
-        "0xayman",
-        "apache-2.0",
-    ],
-    "AymanTarig/Llama-3.2-1B-FC-v3-critique": [
-        "Llama-3.2-1B-FC-v3-critique (FC)",
-        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v3-critique",
-        "0xayman",
-        "apache-2.0",
-    ],
-    "AymanTarig/Llama-3.2-1B-FC-v4-llama-critique": [
-        "Llama-3.2-1B-FC-v4-llama-critique (FC)",
-        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v4-llama-critique",
-        "0xayman",
-        "apache-2.0",
-    ],
-    "AymanTarig/Llama-3.2-1B-FC-v5": [
-        "Llama-3.2-1B-FC-v5 (FC)",
-        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v5",
-        "0xayman",
+        "AymanTarig",
         "apache-2.0",
     ],
 
@@ -60,7 +49,7 @@ MODEL_METADATA_MAPPING = {
     "AymanTarig/SmolLM2-360M-FC-v1": [
         "SmolLM2-360M-FC-v1 (FC)",
         "https://huggingface.co/AymanTarig/SmolLM2-360M-FC-v1",
-        "0xayman",
+        "AymanTarig",
         "apache-2.0",
     ],
 
