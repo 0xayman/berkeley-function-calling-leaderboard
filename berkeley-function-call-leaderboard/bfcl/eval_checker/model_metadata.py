@@ -64,6 +64,12 @@ MODEL_METADATA_MAPPING = {
         "AymanTarig",
         "apache-2.0",
     ],
+    "AymanTarig/deepseek-coder-1.3b-FC-v2": [
+        "Deepseek-coder-1.3b-FC-v2 (FC)",
+        "https://huggingface.co/AymanTarig/deepseek-coder-1.3b-FC-v2",
+        "AymanTarig",
+        "apache-2.0",
+    ],
     "deepseek-ai/deepseek-coder-1.3b-instruct": [
         "Deepseek-coder-1.3b-Instruct (Prompt)",
         "https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-instruct",
