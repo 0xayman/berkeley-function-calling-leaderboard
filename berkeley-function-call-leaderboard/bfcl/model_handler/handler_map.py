@@ -102,6 +102,8 @@ local_inference_handler_map = {
     "AymanTarig/Llama-3.2-1B-FC-v1.4": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v1.5": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v1.6": LlamaJsonHandler,
+    "AymanTarig/Llama-3.2-1B-FC-v1.7": LlamaJsonHandler,
+    "AymanTarig/Llama-3.2-1B-FC-v1.8": LlamaJsonHandler,
     "AymanTarig/deepseek-coder-1.3b-FC-v1": DeepseekJsonHandler,
     "AymanTarig/deepseek-coder-1.3b-FC-v2": DeepseekJsonHandler,
     "deepseek-ai/deepseek-coder-1.3b-instruct": DeepseekJsonHandler,
