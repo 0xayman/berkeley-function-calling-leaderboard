@@ -96,6 +96,7 @@ local_inference_handler_map = {
     "AymanTarig/Qwen2.5-0.5B-FC-v2": QwenJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v1": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v2": LlamaJsonHandler,
+    "AymanTarig/Llama-3.2-1B-FC-v3": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v1.1": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v1.2": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v1.3": LlamaJsonHandler,
