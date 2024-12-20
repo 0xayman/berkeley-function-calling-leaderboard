@@ -155,6 +155,60 @@ MODEL_METADATA_MAPPING = {
         "AymanTarig",
         "apache-2.0",
     ],
+    "AymanTarig/Llama-3.2-1B-FC-v0.2": [
+        "Llama-3.2-1B-FC-v0.2 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v0.2",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Llama-3.2-1B-FC-v0.3": [
+        "Llama-3.2-1B-FC-v0.3 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v0.3",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Llama-3.2-1B-FC-v0.4": [
+        "Llama-3.2-1B-FC-v0.4 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v0.4",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Llama-3.2-1B-FC-v0.5": [
+        "Llama-3.2-1B-FC-v0.5 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v0.5",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Llama-3.2-1B-FC-v0.6": [
+        "Llama-3.2-1B-FC-v0.6 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v0.6",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Llama-3.2-1B-FC-v0.7": [
+        "Llama-3.2-1B-FC-v0.7 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v0.7",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Llama-3.2-1B-FC-v0.8": [
+        "Llama-3.2-1B-FC-v0.8 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v0.8",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Llama-3.2-1B-FC-v0.9": [
+        "Llama-3.2-1B-FC-v0.9 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v0.9",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Llama-3.2-1B-FC-v0.10": [
+        "Llama-3.2-1B-FC-v0.10 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v0.10",
+        "AymanTarig",
+        "apache-2.0",
+    ],
 
     "AymanTarig/deepseek-coder-1.3b-FC-v1": [
         "Deepseek-coder-1.3b-FC-v1 (FC)",
