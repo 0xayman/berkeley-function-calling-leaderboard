@@ -149,6 +149,13 @@ MODEL_METADATA_MAPPING = {
         "apache-2.0",
     ],
 
+    "AymanTarig/Llama-3.2-1B-FC-v0.1": [
+        "Llama-3.2-1B-FC-v0.1 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v0.1",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+
     "AymanTarig/deepseek-coder-1.3b-FC-v1": [
         "Deepseek-coder-1.3b-FC-v1 (FC)",
         "https://huggingface.co/AymanTarig/deepseek-coder-1.3b-FC-v1",
