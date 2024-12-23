@@ -21,6 +21,54 @@ MODEL_METADATA_MAPPING = {
         "AymanTarig",
         "apache-2.0",
     ],
+     "AymanTarig/Qwen2.5-0.5B-FC-v0.2": [
+        "Qwen2.5-0.5B-FC-v0.2 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.2",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.3": [
+        "Qwen2.5-0.5B-FC-v0.3 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.3",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.4": [
+        "Qwen2.5-0.5B-FC-v0.4 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.4",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.5": [
+        "Qwen2.5-0.5B-FC-v0.5 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.5",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.6": [
+        "Qwen2.5-0.5B-FC-v0.6 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.6",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.7": [
+        "Qwen2.5-0.5B-FC-v0.7 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.7",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.8": [
+        "Qwen2.5-0.5B-FC-v0.8 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.8",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.9": [
+        "Qwen2.5-0.5B-FC-v0.9 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.9",
+        "AymanTarig",
+        "apache-2.0",
+    ],
     
     "AymanTarig/Llama-3.2-1B-FC-v1": [
         "Llama-3.2-1B-FC-v1 (FC)",
