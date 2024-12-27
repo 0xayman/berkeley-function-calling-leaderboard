@@ -12,6 +12,7 @@ from bfcl.model_handler.oss_model.salesforce import SalesforceHandler
 from bfcl.model_handler.oss_model.qwen import QwenHandler
 from bfcl.model_handler.oss_model.qwen_fc import QwenFcHandler
 from bfcl.model_handler.oss_model.qwen_json import QwenJsonHandler
+from bfcl.model_handler.oss_model.qwen_json_steps import QwenJsonStepsHandler
 from bfcl.model_handler.oss_model.llama_json import LlamaJsonHandler
 from bfcl.model_handler.oss_model.deepseek_json import DeepseekJsonHandler
 from bfcl.model_handler.oss_model.qwen_cot import QwenCotHandler
@@ -104,7 +105,7 @@ local_inference_handler_map = {
     "AymanTarig/Qwen2.5-0.5B-FC-v0.8": QwenJsonHandler,
     "AymanTarig/Qwen2.5-0.5B-FC-v0.9": QwenJsonHandler,
     "AymanTarig/Qwen2.5-0.5B-FC-v0.10": QwenJsonHandler,
-    "AymanTarig/Qwen2.5-0.5B-FC-v0.11": QwenJsonHandler,
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.11": QwenJsonStepsHandler,
     "AymanTarig/Qwen2.5-0.5B-FC-v0.12": QwenJsonHandler,
     "AymanTarig/Qwen2.5-0.5B-FC-v0.13": QwenJsonHandler,
     "AymanTarig/Qwen2.5-0.5B-FC-v0.14": QwenJsonHandler,

@@ -69,6 +69,72 @@ MODEL_METADATA_MAPPING = {
         "AymanTarig",
         "apache-2.0",
     ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.10": [
+        "Qwen2.5-0.5B-FC-v0.10 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.10",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.11": [
+        "Qwen2.5-0.5B-FC-v0.11 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.11",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.12": [
+        "Qwen2.5-0.5B-FC-v0.12 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.12",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.13": [
+        "Qwen2.5-0.5B-FC-v0.13 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.13",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.14": [
+        "Qwen2.5-0.5B-FC-v0.14 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.14",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.15": [
+        "Qwen2.5-0.5B-FC-v0.15 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.15",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.16": [
+        "Qwen2.5-0.5B-FC-v0.16 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.16",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.17": [
+        "Qwen2.5-0.5B-FC-v0.17 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.17",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.18": [
+        "Qwen2.5-0.5B-FC-v0.18 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.18",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.19": [
+        "Qwen2.5-0.5B-FC-v0.19 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.19",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.20": [
+        "Qwen2.5-0.5B-FC-v0.20 (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v0.20",
+        "AymanTarig",
+        "apache-2.0",
+    ],
     
     "AymanTarig/Llama-3.2-1B-FC-v1": [
         "Llama-3.2-1B-FC-v1 (FC)",
