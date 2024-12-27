@@ -47,6 +47,27 @@ You will be given a **user query** and a set of **tools**. Your task is to follo
      ]
      </tool_calls>
 <|im_end|>
+
+### Examples:
+- **User Query**: "What is the weather in New York?"  
+- **Available Tools**:  
+<tools>
+[
+    {{"name": "WeatherLookup", "description": "Get the current weather for a specific location.", "parameters": {{"location": {{"type": "string", "description": "The location to get the weather for."}}}}}},
+    {{"name": "TimeLookup", "description": "Get the current time for a specific location.", "parameters": {{"location": {{"type": "string", "description": "The location to get the time for."}}}}}}
+]
+</tools>
+- **Response**:  
+Step 1: The query asks for the weather in New York, which requires using the `WeatherLookup` tool.  
+Step 2: The relevant tool is `WeatherLookup`.  
+Step 3: The query provides the required information (`location` = "New York").  
+Step 4: Construct the tool call:  
+<tool_calls>
+[
+    {{"name": "WeatherLookup", "arguments": {{"location": "New York"}}}}
+]
+</tool_calls>
+<|im_end|>
 """
         
         for message in messages:
