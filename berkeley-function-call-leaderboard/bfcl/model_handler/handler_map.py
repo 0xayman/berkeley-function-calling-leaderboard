@@ -105,7 +105,7 @@ local_inference_handler_map = {
     "AymanTarig/Qwen2.5-0.5B-FC-v0.8": QwenJsonHandler,
     "AymanTarig/Qwen2.5-0.5B-FC-v0.9": QwenJsonHandler,
     "AymanTarig/Qwen2.5-0.5B-FC-v0.10": QwenJsonHandler,
-    "AymanTarig/Qwen2.5-0.5B-FC-v0.11": QwenJsonStepsHandler,
+    "AymanTarig/Qwen2.5-0.5B-FC-v0.11": QwenJsonHandler,
     "AymanTarig/Qwen2.5-0.5B-FC-v0.12": QwenJsonHandler,
     "AymanTarig/Qwen2.5-0.5B-FC-v0.13": QwenJsonHandler,
     "AymanTarig/Qwen2.5-0.5B-FC-v0.14": QwenJsonHandler,
