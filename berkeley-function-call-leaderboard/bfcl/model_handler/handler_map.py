@@ -11,6 +11,7 @@ from bfcl.model_handler.oss_model.phi import PhiHandler
 from bfcl.model_handler.oss_model.salesforce import SalesforceHandler
 from bfcl.model_handler.oss_model.qwen import QwenHandler
 from bfcl.model_handler.oss_model.qwen_fc import QwenFcHandler
+from bfcl.model_handler.oss_model.falcon_handler import FalconHandler
 from bfcl.model_handler.oss_model.qwen_json import QwenJsonHandler
 from bfcl.model_handler.oss_model.qwen_json_steps import QwenJsonStepsHandler
 from bfcl.model_handler.oss_model.llama_json import LlamaJsonHandler
@@ -155,6 +156,7 @@ local_inference_handler_map = {
     "AymanTarig/deepseek-coder-1.3b-FC-v1": DeepseekJsonHandler,
     "AymanTarig/deepseek-coder-1.3b-FC-v2": DeepseekJsonHandler,
     "deepseek-ai/deepseek-coder-1.3b-instruct": DeepseekJsonHandler,
+    "tiiuae/Falcon3-1B-Instruct": FalconHandler,
     
     "google/gemma-2-2b-it": GemmaHandler,
     "google/gemma-2-9b-it": GemmaHandler,

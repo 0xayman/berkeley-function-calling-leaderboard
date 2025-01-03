@@ -360,6 +360,12 @@ MODEL_METADATA_MAPPING = {
         "AymanTarig",
         "apache-2.0",
     ],
+    "tiiuae/Falcon3-1B-Instruct": [
+        "Falcon3-1B-Instruct (Prompt)",
+        "https://huggingface.co/tiiuae/Falcon3-1B-Instruct",
+        "tiiuae",
+        "apache-2.0",
+    ],
     
 
     "AymanTarig/deepseek-coder-1.3b-FC-v1": [
