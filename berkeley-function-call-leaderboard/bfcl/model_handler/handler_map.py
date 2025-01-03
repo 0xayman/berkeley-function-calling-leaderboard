@@ -157,6 +157,7 @@ local_inference_handler_map = {
     "AymanTarig/deepseek-coder-1.3b-FC-v2": DeepseekJsonHandler,
     "deepseek-ai/deepseek-coder-1.3b-instruct": DeepseekJsonHandler,
     "tiiuae/Falcon3-1B-Instruct": FalconHandler,
+    "AymanTarig/Falcon3-1B-FC-v0.1": FalconHandler,
     
     "google/gemma-2-2b-it": GemmaHandler,
     "google/gemma-2-9b-it": GemmaHandler,
