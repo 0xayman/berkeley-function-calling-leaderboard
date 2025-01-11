@@ -571,6 +571,14 @@ MODEL_METADATA_MAPPING = {
         "Meta",
         "Meta Llama 3 Community",
     ],
+    "AymanTarig/Llama-3.2-1B-FC-v0.2": [
+        "Llama-3.2-1B-Instruct (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v0.2",
+        "AymanTarig",
+        "apache-2.0"
+    ],
+
+
     "command-r-plus-FC": [
         "Command-R-Plus (FC)",
         "https://txt.cohere.com/command-r-plus-microsoft-azure",
