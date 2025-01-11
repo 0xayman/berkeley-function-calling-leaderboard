@@ -1,5 +1,6 @@
 import json
 from bfcl.model_handler.local_inference.base_oss_handler import OSSHandler
+from overrides import override
 
 class LlamaJsonHandler(OSSHandler):
     def __init__(self, model_name, temperature) -> None:
@@ -19,6 +20,7 @@ class LlamaJsonHandler(OSSHandler):
         else:
             return functions
 
+    @override
     def _format_prompt(self, messages, function):
         # We first format the function signature and then add the messages
         tools = self._convert_functions_format(function)
@@ -43,6 +45,7 @@ Respond in the format {{"name": function name, "parameters": dictionary of argum
         formatted_prompt += "<|start_header_id|>assistant<|end_header_id|>\n"
         return formatted_prompt
     
+    @override
     def decode_ast(self, result, language="Python"):
         # The output is a list of dictionaries, where each dictionary contains the function name and its arguments
         result = result.strip()
@@ -57,6 +60,7 @@ Respond in the format {{"name": function name, "parameters": dictionary of argum
 
         return func_calls
     
+    @override
     def decode_execute(self, result):
         # The output is a list of dictionaries, where each dictionary contains the function name and its arguments
         result = result.strip()
