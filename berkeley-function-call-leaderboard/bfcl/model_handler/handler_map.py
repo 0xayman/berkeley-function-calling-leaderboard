@@ -117,7 +117,7 @@ local_inference_handler_map = {
     "meta-llama/Llama-3.2-3B-Instruct": LlamaHandler,
     "meta-llama/Llama-3.3-70B-Instruct-FC": LlamaFCHandler,
     "meta-llama/Llama-3.3-70B-Instruct": LlamaHandler,
-    "AymanTarig/Llama3.2-1B-FC-v0.2": LlamaJsonHandler,
+    "AymanTarig/Llama-3.2-1B-FC-v0.2": LlamaJsonHandler,
 
 
     "Salesforce/xLAM-1b-fc-r": SalesforceHandler,
