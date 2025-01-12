@@ -102,10 +102,13 @@ api_inference_handler_map = {
 
 # Inference through local hosting
 local_inference_handler_map = {
+    # Custom Models
+    "AymanTarig/Llama-3.2-1B-FC-v0.2": LlamaJsonHandler,
+    "AymanTarig/Llama-3.2-1B-FC-v0.3": LlamaJsonHandler,
+    
     "google/gemma-2-2b-it": GemmaHandler,
     "google/gemma-2-9b-it": GemmaHandler,
     "google/gemma-2-27b-it": GemmaHandler,
-
 
     "meta-llama/Meta-Llama-3-8B-Instruct": LlamaHandler,
     "meta-llama/Meta-Llama-3-70B-Instruct": LlamaHandler,
@@ -117,9 +120,7 @@ local_inference_handler_map = {
     "meta-llama/Llama-3.2-3B-Instruct": LlamaHandler,
     "meta-llama/Llama-3.3-70B-Instruct-FC": LlamaFCHandler,
     "meta-llama/Llama-3.3-70B-Instruct": LlamaHandler,
-    "AymanTarig/Llama-3.2-1B-FC-v0.2": LlamaJsonHandler,
-
-
+    
     "Salesforce/xLAM-1b-fc-r": SalesforceHandler,
     "Salesforce/xLAM-7b-fc-r": SalesforceHandler,
     "Salesforce/xLAM-7b-r": SalesforceHandler,
