@@ -26,6 +26,7 @@ from bfcl.model_handler.local_inference.hermes import HermesHandler
 from bfcl.model_handler.local_inference.llama import LlamaHandler
 from bfcl.model_handler.local_inference.llama_fc import LlamaFCHandler
 from bfcl.model_handler.local_inference.llama_json import LlamaJsonHandler
+from bfcl.model_handler.local_inference.llama_distil import LlamaDistillHandler
 from bfcl.model_handler.local_inference.minicpm import MiniCPMHandler
 from bfcl.model_handler.local_inference.minicpm_fc import MiniCPMFCHandler
 from bfcl.model_handler.local_inference.mistral_fc import MistralFCHandler
@@ -107,6 +108,7 @@ local_inference_handler_map = {
     "AymanTarig/Llama-3.2-1B-FC-v0.2-distilled": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v0.3": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v0.4": LlamaJsonHandler,
+    "AymanTarig/Llama-3.2-1B-FC-v0.4-distilled": LlamaDistillHandler,
     
     "google/gemma-2-2b-it": GemmaHandler,
     "google/gemma-2-9b-it": GemmaHandler,
