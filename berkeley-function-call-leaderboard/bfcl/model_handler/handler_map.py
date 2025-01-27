@@ -106,7 +106,7 @@ local_inference_handler_map = {
     # Custom Models
     "AymanTarig/Llama-3.2-1B-FC-v0.2": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v0.2-distilled": LlamaJsonHandler,
-    "AymanTarig/Llama-3.2-1B-FC-v0.3": LlamaJsonHandler,
+    "AymanTarig/Llama-3.2-1B-FC-v0.3": LlamaDistillHandler,
     "AymanTarig/Llama-3.2-1B-FC-v0.4": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v0.4-distilled": LlamaDistillHandler,
     
