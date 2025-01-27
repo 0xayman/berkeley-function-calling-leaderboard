@@ -20,7 +20,7 @@ class LlamaDistillHandler(OSSHandler):
         else:
             return functions
 
-    def _extract_json_from_text(text):
+    def _extract_json_from_text(self, text):
     # Split the text at the closing </think> tag and take the part after it
         split_text = text.split('</think>', 1)
         
