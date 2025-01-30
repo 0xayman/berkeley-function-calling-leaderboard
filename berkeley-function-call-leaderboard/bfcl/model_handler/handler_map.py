@@ -106,13 +106,17 @@ local_inference_handler_map = {
     # Custom Models
     "AymanTarig/Llama-3.2-1B-FC-v0.1": LlamaJsonHandler,
     "AymanTarig/Llama-3.2-1B-FC-v0.1-plus-think": LlamaDistillHandler,
-    "AymanTarig/Llama-3.2-1B-FC-v0.2": LlamaJsonHandler,
-    "AymanTarig/Llama-3.2-1B-FC-v0.2-distilled": LlamaJsonHandler,
+    "AymanTarig/Llama-3.2-1B-FC-v0.2": LlamaDistillHandler,
+    "AymanTarig/Llama-3.2-1B-FC-v0.2-distilled": LlamaDistillHandler,
     "AymanTarig/Llama-3.2-1B-FC-v0.3": LlamaDistillHandler,
     "AymanTarig/Llama-3.2-1B-FC-v0.4": LlamaDistillHandler,
     "AymanTarig/Llama-3.2-1B-FC-v0.5": LlamaDistillHandler,
     "AymanTarig/Llama-3.2-1B-FC-v0.6": LlamaDistillHandler,
     "AymanTarig/Llama-3.2-1B-FC-v0.4-distilled": LlamaDistillHandler,
+
+    # Llama 3.2-3B
+    "AymanTarig/Llama-3.2-3B-FC-v0.1": LlamaHandler,
+
     
     "google/gemma-2-2b-it": GemmaHandler,
     "google/gemma-2-9b-it": GemmaHandler,
