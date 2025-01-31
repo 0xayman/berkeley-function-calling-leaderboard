@@ -117,6 +117,9 @@ local_inference_handler_map = {
     # Llama 3.2-3B
     "AymanTarig/Llama-3.2-3B-FC-v0.1": LlamaHandler,
 
+    # Llama Insturct
+    "meta-llama/Llama-3.2-1B-Instruct": LlamaJsonHandler,
+    "meta-llama/Llama-3.2-3B-Instruct": LlamaJsonHandler,
     
     "google/gemma-2-2b-it": GemmaHandler,
     "google/gemma-2-9b-it": GemmaHandler,
@@ -128,8 +131,6 @@ local_inference_handler_map = {
     "meta-llama/Llama-3.1-8B-Instruct": LlamaHandler,
     "meta-llama/Llama-3.1-70B-Instruct-FC": LlamaFCHandler,
     "meta-llama/Llama-3.1-70B-Instruct": LlamaHandler,
-    "meta-llama/Llama-3.2-1B-Instruct": LlamaHandler,
-    "meta-llama/Llama-3.2-3B-Instruct": LlamaHandler,
     "meta-llama/Llama-3.3-70B-Instruct-FC": LlamaFCHandler,
     "meta-llama/Llama-3.3-70B-Instruct": LlamaHandler,
     
