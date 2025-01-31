@@ -571,6 +571,18 @@ MODEL_METADATA_MAPPING = {
         "Meta",
         "Meta Llama 3 Community",
     ],
+    "AymanTarig/Llama-3.2-1B-FC-v1": [
+        "Llama-3.2-1B-FC-v1 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v1",
+        "AymanTarig",
+        "apache-2.0",
+    ],
+    "AymanTarig/Llama-3.2-1B-FC-v1-plus-think": [
+        "Llama-3.2-1B-FC-v1-plus-think (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v1-plus-think",
+        "AymanTarig",
+        "apache-2.0",
+    ],
      "AymanTarig/Llama-3.2-1B-FC-v0.1": [
         "Llama-3.2-1B-FC-v0.1 (FC)",
         "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v0.1",
