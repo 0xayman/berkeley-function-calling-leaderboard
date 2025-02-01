@@ -595,6 +595,12 @@ MODEL_METADATA_MAPPING = {
         "AymanTarig",
         "apache-2.0"
     ],
+    "AymanTarig/Llama-3.2-1B-FC-v1.1": [
+        "Llama-3.2-1B-FC-v1.1 (FC)",
+        "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v1.1",
+        "AymanTarig",
+        "apache-2.0"
+    ],
     "AymanTarig/Llama-3.2-1B-FC-v1.1-think": [
         "Llama-3.2-1B-FC-v1.1-think (FC)",
         "https://huggingface.co/AymanTarig/Llama-3.2-1B-FC-v1.1-think",
