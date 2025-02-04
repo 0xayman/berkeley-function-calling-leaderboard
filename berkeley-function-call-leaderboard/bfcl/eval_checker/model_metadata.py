@@ -658,6 +658,15 @@ MODEL_METADATA_MAPPING = {
     ],
 
 
+    # QWEN
+    "AymanTarig/Qwen2.5-0.5B-FC-v1.1-think": [
+        "Qwen2.5-0.5B-FC-v1.1-think (FC)",
+        "https://huggingface.co/AymanTarig/Qwen2.5-0.5B-FC-v1.1-think",
+        "AymanTarig",
+        "apache-2.0"
+    ],
+
+
     "command-r-plus-FC": [
         "Command-R-Plus (FC)",
         "https://txt.cohere.com/command-r-plus-microsoft-azure",
